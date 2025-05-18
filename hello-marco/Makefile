@@ -1,10 +1,12 @@
+.PHONY: rust-version format lint test run release all
+
 rust-version:
 	@echo "Rust command-line utility versions:"
-	rustc --version 			#rust compiler
-	cargo --version 			#rust package manager
-	rustfmt --version			#rust code formatter
-	rustup --version			#rust toolchain manager
-	clippy-driver --version		#rust linter
+	rustc --version
+	cargo --version
+	rustfmt --version
+	rustup --version
+	clippy-driver --version
 
 format:
 	cargo fmt --quiet
